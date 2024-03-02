@@ -17,12 +17,18 @@ const NavBarRoutes = () => {
   const isSearchPage = path === "/motion-school/search";
   const isStudentCourse = path?.startsWith("/course")
   const teacherMode = () => {
+    let key = prompt("Please Enter teacher key");
     if (isTeacherPage) {
       router.push("/motion-school");
       toast.info("Exited from teacher mode");
     } else {
-      router.push("/motion-school/teacher");
-      toast.success("Teacher mode activated");
+      if (key == "123") {
+        router.push("/motion-school/teacher");
+        toast.success("Teacher mode activated");
+      }
+      else {
+        toast.warning("please enter valid Key");
+      }
     }
   };
   return (
@@ -39,9 +45,9 @@ const NavBarRoutes = () => {
       <div className="flex items-center justify-center space-x-2">
         {isTeacherPage || isStudentCourse ? (
           <Link href="/motion-school">
-          <Button>
-            Exit <DoorOpen className="ml-2" />{" "}
-          </Button></Link>
+            <Button>
+              Exit <DoorOpen className="ml-2" />{" "}
+            </Button></Link>
         ) : (
           <Image
             title="Teacher Mode"

@@ -53,7 +53,7 @@ const Lesson = async ({ params }: LessonProps) => {
   const isCompleted = requiredFields.every(Boolean);
   return (
     <>
-      {!lesson.isPublished && (
+      {/* {!lesson.isPublished && (
         <Alert>
           <div className="flex items-center space-x-2">
             <AlertTriangle size={16} className="text-blue-700" />
@@ -63,7 +63,7 @@ const Lesson = async ({ params }: LessonProps) => {
             </AlertDescription>
           </div>
         </Alert>
-      )}
+      )} */}
 
       <div className=" h-fit  p-7 m-6 mt-4 shadow-lg items-center justify-center   bg-indigo-400  rounded-md bg-clip-padding backdrop-filter lg:backdrop-blur-sm bg-opacity-20 border border-gray-100">
         <div>

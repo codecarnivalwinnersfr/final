@@ -72,7 +72,7 @@ const CourseId = async ({ params }: ParamsType) => {
 
   return (
     <>
- {!course.isPublished && (
+      {/* {!course.isPublished && (
         <Alert>
           <div className="flex items-center space-x-2">
             <AlertTriangle size={16} className="text-blue-700" />
@@ -82,26 +82,26 @@ const CourseId = async ({ params }: ParamsType) => {
             </AlertDescription>
           </div>
         </Alert>
-      )}
+      )} */}
 
       <div className="  h-fit  p-7 m-6 mt-4 shadow-lg items-center justify-center   bg-indigo-400  rounded-md bg-clip-padding backdrop-filter lg:backdrop-blur-sm bg-opacity-20 border border-gray-100">
-       
-          <div className="flex gap-y-1 items-center justify-between">
-            <div>
-              <h1 className="text-2xl font-semibold text-slate-800">
-                Course SetUp
-              </h1>
-              <span className="text-sm text-slate-600">
-                Please Complete all steps {progressText}{" "}
-              </span>
-            </div>
-            <CoursePublish
-              isPublished={course.isPublished}
-              stepComplete={isCompleted}
-              courseId={params.courseId}
-            />
+
+        <div className="flex gap-y-1 items-center justify-between">
+          <div>
+            <h1 className="text-2xl font-semibold text-slate-800">
+              Course SetUp
+            </h1>
+            <span className="text-sm text-slate-600">
+              Please Complete all steps {progressText}{" "}
+            </span>
           </div>
-    
+          <CoursePublish
+            isPublished={course.isPublished}
+            stepComplete={isCompleted}
+            courseId={params.courseId}
+          />
+        </div>
+
 
         {/* course form setup */}
 

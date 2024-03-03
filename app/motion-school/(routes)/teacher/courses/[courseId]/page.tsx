@@ -18,7 +18,6 @@ import { ResourcesForm } from "./_components/resourses";
 import Lessons from "./_components/lessons";
 import CoursePublish from "./_components/coursepublish";
 
-
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 const CourseId = async ({ params }: ParamsType) => {
   const { userId } = auth();
@@ -122,7 +121,6 @@ const CourseId = async ({ params }: ParamsType) => {
 
           <div className="col-span-6 space-y-6 ml-4">
             <PriceForm initialData={course} courseId={course.id} />
-
             <ResourcesForm initialData={course} courseId={course.id} />
             <Lessons initialData={course} courseId={course.id} />
           </div>

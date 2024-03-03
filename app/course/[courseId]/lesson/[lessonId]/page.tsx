@@ -74,7 +74,7 @@ const Lesson = async ({ params }: lessonProps) => {
         related_keywords: 'true'
       },
       headers: {
-        'X-RapidAPI-Key': '1179967a4dmsh66d37e6941d8960p1ce880jsnd5dddb325c5b',
+        'X-RapidAPI-Key': '5c9a287956mshfa1cbf9072c01f0p10e74cjsnef3d1a887f1e',
         'X-RapidAPI-Host': 'google-web-search1.p.rapidapi.com'
       }
     };
@@ -88,8 +88,8 @@ const Lesson = async ({ params }: lessonProps) => {
         related_keywords: 'true'
       },
       headers: {
-        'X-RapidAPI-Key': '1179967a4dmsh66d37e6941d8960p1ce880jsnd5dddb325c5b',
-        'X-RapidAPI-Host': 'google-web-search1.p.rapidapi.com'
+        'X-RapidAPI-Key': '5c9a287956mshfa1cbf9072c01f0p10e74cjsnef3d1a887f1e',
+    'X-RapidAPI-Host': 'google-web-search1.p.rapidapi.com'
       }
     };
 
@@ -102,7 +102,7 @@ const Lesson = async ({ params }: lessonProps) => {
         related_keywords: 'true'
       },
       headers: {
-        'X-RapidAPI-Key': '1179967a4dmsh66d37e6941d8960p1ce880jsnd5dddb325c5b',
+        'X-RapidAPI-Key': '5c9a287956mshfa1cbf9072c01f0p10e74cjsnef3d1a887f1e',
         'X-RapidAPI-Host': 'google-web-search1.p.rapidapi.com'
       }
     };
@@ -116,8 +116,8 @@ const Lesson = async ({ params }: lessonProps) => {
         related_keywords: 'true'
       },
       headers: {
-        'X-RapidAPI-Key': '1179967a4dmsh66d37e6941d8960p1ce880jsnd5dddb325c5b',
-        'X-RapidAPI-Host': 'google-web-search1.p.rapidapi.com'
+        'X-RapidAPI-Key': '5c9a287956mshfa1cbf9072c01f0p10e74cjsnef3d1a887f1e',
+    'X-RapidAPI-Host': 'google-web-search1.p.rapidapi.com'
       }
     };
 
@@ -294,7 +294,7 @@ const Lesson = async ({ params }: lessonProps) => {
               <CourseAttachments attachments={simplilearn} />
             </div>
           )}
-           {udamy && (
+          {udamy && (
             <div className="p-4">
               <h4 className="font-semibold text-indigo-500">Udamy</h4>
               <CourseAttachments attachments={udamy} />
